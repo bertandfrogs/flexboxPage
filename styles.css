@@ -1,0 +1,117 @@
+html, body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+}
+.side {
+    display: flex;
+    flex-direction: column;
+    background-color: #161111;
+}
+.side a{
+    text-decoration: none;
+    color: white;
+}
+.side a:hover{
+    border-bottom: 2px solid #DDB887;
+    color: #DDB887;
+}
+.side .sideBox{
+    padding: 20px;
+}
+.pageBox{
+    width:95%;
+    background-color: #DDB887;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: darkgray;
+}
+.head{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.head img{
+    width: 50%;
+    padding: 20px;
+}
+.head .links{
+    width: 100%;
+    display: flex;
+    background-color: #f5f5dc;
+    justify-content: space-evenly;
+}
+.head .links .linkBox{
+    padding: 5px;
+}
+.head .links .linkBox :hover{
+    border-bottom: 2px solid gray;
+    color: gray;
+}
+.head .links a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 100;
+}
+.content{
+    background-color: #F1A536;
+    height: -webkit-fill-available;
+    display: flex;
+}
+.content .content-box{
+    width: 50%;
+    padding:20px;
+}
+.textContent p{
+    font-size: 14px;
+    background-color:  #fcf4e9;
+    margin: 0;
+    border-radius: 5px;
+    padding: 5px;
+}
+.content .content-box img{
+    width: 100%;
+    border-radius: 5px;
+    /*padding: 20px;*/
+}
+.foot{
+    width: 100%;
+    background-color: #f5f5dc;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-end;
+}
+.foot p{
+    margin: 0;
+    padding: 5px;
+    text-align: center;
+}
+@media screen and (max-width: 800px) {
+    .content{
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        padding-bottom: 20px;
+    }
+    .content .content-box{
+        width: 80%;
+        padding: 20px;
+        padding-bottom: 0;
+    }
+    .container{
+        width: 106%;
+    }
+    .side{
+        width: 0;
+    }
+    .side a{
+        color: transparent;
+    }
+}
